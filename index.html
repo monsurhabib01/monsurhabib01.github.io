@@ -2,157 +2,126 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Monsur Habib | AML Data Analyst</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', sans-serif; background: #0d1117; color: #c9d1d9; line-height: 1.7; }
-    a { color: #58a6ff; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
+    body { font-family: 'Segoe UI', sans-serif; background: #0d1117; color: #c9d1d9; }
     header { background: #161b22; border-bottom: 1px solid #30363d; padding: 40px 20px; text-align: center; }
-    header h1 { font-size: 2.2rem; color: #e6edf3; }
-    header p { color: #8b949e; margin-top: 8px; font-size: 1.05rem; }
-    .badges { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
-    .badge { background: #21262d; border: 1px solid #30363d; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; color: #c9d1d9; }
-    .badge.green { border-color: #238636; color: #3fb950; }
-    .badge.blue { border-color: #1f6feb; color: #58a6ff; }
-
-    main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-
-    section { margin-bottom: 48px; }
-    h2 { font-size: 1.3rem; color: #e6edf3; border-bottom: 1px solid #30363d; padding-bottom: 10px; margin-bottom: 24px; }
-
-    .about p { color: #8b949e; font-size: 1rem; margin-bottom: 10px; }
-
-    .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 16px; }
+    header h1 { font-size: 2.2rem; color: #58a6ff; }
+    header p { margin-top: 8px; font-size: 1rem; color: #8b949e; }
+    .badges { margin-top: 16px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+    .badges a img { height: 28px; }
+    section { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+    h2 { font-size: 1.4rem; color: #58a6ff; border-bottom: 1px solid #30363d; padding-bottom: 8px; margin-bottom: 20px; }
+    .about p { color: #8b949e; line-height: 1.8; margin-bottom: 10px; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
     .card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 20px; transition: border-color 0.2s; }
     .card:hover { border-color: #58a6ff; }
-    .card h3 { color: #e6edf3; font-size: 1rem; margin-bottom: 8px; }
-    .card p { color: #8b949e; font-size: 0.88rem; margin-bottom: 12px; }
-    .card .tags { display: flex; flex-wrap: wrap; gap: 6px; }
-    .tag { background: #21262d; border: 1px solid #30363d; padding: 3px 10px; border-radius: 12px; font-size: 0.78rem; color: #8b949e; }
-    .tag.highlight { border-color: #1f6feb; color: #58a6ff; }
-
+    .card h3 { color: #f0f6fc; font-size: 1rem; margin-bottom: 8px; }
+    .card p { font-size: 0.85rem; color: #8b949e; line-height: 1.6; margin-bottom: 12px; }
+    .card .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+    .card .tag { background: #21262d; color: #58a6ff; font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; }
+    .card a { color: #58a6ff; font-size: 0.85rem; text-decoration: none; }
+    .card a:hover { text-decoration: underline; }
     .skills-grid { display: flex; flex-wrap: wrap; gap: 10px; }
-    .skill { background: #21262d; border: 1px solid #30363d; padding: 8px 16px; border-radius: 6px; font-size: 0.9rem; }
-
-    .contact-links { display: flex; flex-wrap: wrap; gap: 12px; }
-    .contact-link { background: #21262d; border: 1px solid #30363d; padding: 10px 20px; border-radius: 6px; font-size: 0.9rem; transition: border-color 0.2s; }
-    .contact-link:hover { border-color: #58a6ff; text-decoration: none; }
-
-    footer { text-align: center; padding: 30px; color: #484f58; font-size: 0.85rem; border-top: 1px solid #21262d; }
+    .skill { background: #161b22; border: 1px solid #30363d; padding: 8px 16px; border-radius: 6px; font-size: 0.85rem; color: #c9d1d9; }
+    .contact-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
+    .contact-links a { color: #58a6ff; text-decoration: none; font-size: 0.9rem; }
+    footer { text-align: center; padding: 30px; color: #8b949e; font-size: 0.8rem; border-top: 1px solid #30363d; margin-top: 60px; }
   </style>
 </head>
 <body>
 
 <header>
   <h1>Monsur Habib</h1>
-  <p>AML Data Analyst &amp; Freelance Data Specialist | Dhaka, Bangladesh 🇧🇩</p>
+  <p>AML Data Analyst &amp; Freelance Data Specialist | Dhaka, Bangladesh &#127487;&#127465;</p>
   <div class="badges">
-    <span class="badge green">● Open to Freelance</span>
-    <span class="badge blue">AML Compliance</span>
-    <span class="badge">Python</span>
-    <span class="badge">BD Fintech</span>
-    <span class="badge">BFIU</span>
+    <a href="https://aitipseveryday.com"><img src="https://img.shields.io/badge/Blog-aitipseveryday.com-blue?style=flat-square&logo=wordpress" /></a>
+    <a href="https://www.fiverr.com/mdmonsurhabib"><img src="https://img.shields.io/badge/Fiverr-1DBF73?style=flat-square&logo=fiverr&logoColor=white" /></a>
+    <a href="https://linkedin.com/in/mdmonsurhabib"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" /></a>
+    <a href="https://github.com/monsurhabib01"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" /></a>
+    <a href="https://www.kaggle.com/monsurhabib"><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=flat-square&logo=kaggle&logoColor=white" /></a>
   </div>
 </header>
 
-<main>
+<section class="about">
+  <h2>About Me</h2>
+  <p>Specialized in <strong style="color:#f0f6fc">Anti-Money Laundering (AML) Compliance</strong> and data analytics for Bangladesh Fintech — bKash, Nagad, BFIU regulations.</p>
+  <p>Building production-grade Python pipelines for transaction monitoring, fraud detection, and data cleaning. Freelance data analyst delivering business-ready dashboards and automation for global clients.</p>
+</section>
 
-  <section class="about">
-    <h2>👨‍💻 About Me</h2>
-    <p>Specialized in <strong style="color:#e6edf3">Anti-Money Laundering (AML) Compliance</strong> and data analytics for Bangladesh's Fintech sector — bKash, Nagad, and BFIU regulatory frameworks.</p>
-    <p>Building production-grade Python pipelines for transaction monitoring, fraud detection, and data cleaning. Delivering business-ready reports and dashboards for freelance clients globally.</p>
-    <p>📝 I share AI &amp; data insights at <a href="https://aitipseveryday.com" target="_blank">aitipseveryday.com</a></p>
-  </section>
-
-  <section>
-    <h2>📁 Projects</h2>
-    <div class="projects-grid">
-
-      <div class="card">
-        <h3><a href="https://github.com/monsurhabib01/synthetic-aml-detection" target="_blank">🏦 MFS AML Detection System</a></h3>
-        <p>Rule-based Transaction Monitoring Engine for bKash/Nagad. 6 AML rules, composite risk scoring (0–100), BFIU-calibrated. Reduces false positives on BD-specific transaction patterns.</p>
-        <div class="tags">
-          <span class="tag highlight">Python</span>
-          <span class="tag highlight">Pandas</span>
-          <span class="tag">AML</span>
-          <span class="tag">BFIU</span>
-          <span class="tag">bKash</span>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3><a href="https://monsurhabib01.github.io/sales-dashboard/" target="_blank">📊 Sales Analytics Dashboard</a></h3>
-        <p>Interactive sales dashboard built with HTML/JS and Excel. Live on GitHub Pages. Demonstrates client-ready data visualization and reporting deliverables.</p>
-        <div class="tags">
-          <span class="tag highlight">HTML</span>
-          <span class="tag highlight">Excel</span>
-          <span class="tag">Dashboard</span>
-          <span class="tag">Live Demo</span>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3><a href="https://github.com/monsurhabib01/kaggle-competitions" target="_blank">🏥 Triageist — ER Triage Prediction</a></h3>
-        <p>Random Forest classifier for ESI triage acuity prediction. Kaggle Hackathon 2026 submission on 80K+ emergency department records.</p>
-        <div class="tags">
-          <span class="tag highlight">Python</span>
-          <span class="tag highlight">Scikit-learn</span>
-          <span class="tag">Kaggle</span>
-          <span class="tag">ML</span>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3><a href="https://github.com/monsurhabib01/data-cleaning-projects" target="_blank">🧹 Data Cleaning Projects</a></h3>
-        <p>3 freelance-grade data cleaning projects: Global Textiles CRM import, Workforce data filtering (821→464 records), Retail sales normalization.</p>
-        <div class="tags">
-          <span class="tag highlight">Python</span>
-          <span class="tag highlight">Pandas</span>
-          <span class="tag">Excel</span>
-          <span class="tag">HubSpot</span>
-          <span class="tag">Freelance</span>
-        </div>
-      </div>
-
+<section>
+  <h2>Featured Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>&#127970; MFS AML Detection System</h3>
+      <p>Rule-based Transaction Monitoring Engine for bKash/Nagad. 6 AML rules, composite risk scoring (0–100), BFIU-calibrated thresholds.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">AML</span><span class="tag">BFIU</span></div>
+      <a href="https://github.com/monsurhabib01/synthetic-aml-detection">View on GitHub &rarr;</a>
     </div>
-  </section>
-
-  <section>
-    <h2>🛠️ Skills</h2>
-    <div class="skills-grid">
-      <span class="skill">Python</span>
-      <span class="skill">Pandas / NumPy</span>
-      <span class="skill">SQL</span>
-      <span class="skill">Power BI</span>
-      <span class="skill">Excel</span>
-      <span class="skill">AML Compliance</span>
-      <span class="skill">BFIU Regulations</span>
-      <span class="skill">Transaction Monitoring</span>
-      <span class="skill">Fraud Detection</span>
-      <span class="skill">Data Cleaning</span>
-      <span class="skill">Git / GitHub</span>
+    <div class="card">
+      <h3>&#128200; Sales Dashboard</h3>
+      <p>Interactive sales analytics dashboard with revenue breakdowns, trend analysis, and category performance. Live on GitHub Pages.</p>
+      <div class="tags"><span class="tag">HTML</span><span class="tag">Excel</span><span class="tag">Dashboard</span></div>
+      <a href="https://monsurhabib01.github.io/sales-dashboard/">Live Demo &rarr;</a>
     </div>
-  </section>
-
-  <section>
-    <h2>📫 Contact</h2>
-    <div class="contact-links">
-      <a class="contact-link" href="https://www.fiverr.com/mdmonsurhabib" target="_blank">💼 Fiverr</a>
-      <a class="contact-link" href="https://linkedin.com/in/mdmonsurhabib" target="_blank">🔗 LinkedIn</a>
-      <a class="contact-link" href="https://github.com/monsurhabib01" target="_blank">🐙 GitHub</a>
-      <a class="contact-link" href="https://www.kaggle.com/monsurhabib" target="_blank">📊 Kaggle</a>
-      <a class="contact-link" href="https://aitipseveryday.com" target="_blank">📝 Blog</a>
-      <a class="contact-link" href="mailto:habibmonsur01@gmail.com">📧 Email</a>
+    <div class="card">
+      <h3>&#127973; Triageist — ER Triage Prediction</h3>
+      <p>Random Forest classifier for Emergency Room ESI Triage Acuity Prediction. Kaggle Hackathon 2026.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">Kaggle</span></div>
+      <a href="https://github.com/monsurhabib01/kaggle-competitions">View on GitHub &rarr;</a>
     </div>
-  </section>
+    <div class="card">
+      <h3>&#128101; Global Textiles CRM Import</h3>
+      <p>Deduplicated B2B contacts from messy spreadsheets into HubSpot CRM-ready format.</p>
+      <div class="tags"><span class="tag">Excel</span><span class="tag">HubSpot</span><span class="tag">Data Cleaning</span></div>
+      <a href="https://github.com/monsurhabib01/data-cleaning-projects/tree/main/project-01-globaltextiles">View on GitHub &rarr;</a>
+    </div>
+    <div class="card">
+      <h3>&#128203; Workforce Data Filtering</h3>
+      <p>Filtered 821 raw workforce rows to 464 clean records with full Python audit trail.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span></div>
+      <a href="https://github.com/monsurhabib01/data-cleaning-projects/tree/main/project-02-workforce-data-filtering">View on GitHub &rarr;</a>
+    </div>
+    <div class="card">
+      <h3>&#128717; Retail Sales Data Cleaning</h3>
+      <p>Cleaned 1,280-row retail dataset — nulls, duplicates, date normalization, outlier handling.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span></div>
+      <a href="https://github.com/monsurhabib01/data-cleaning-projects/tree/main/project-03-sales-data-cleaning">View on GitHub &rarr;</a>
+    </div>
+  </div>
+</section>
 
-</main>
+<section>
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <span class="skill">Python</span>
+    <span class="skill">Pandas / NumPy</span>
+    <span class="skill">SQL</span>
+    <span class="skill">Power BI</span>
+    <span class="skill">Excel</span>
+    <span class="skill">AML Compliance</span>
+    <span class="skill">BFIU Regulations</span>
+    <span class="skill">Fraud Detection</span>
+    <span class="skill">Data Cleaning</span>
+    <span class="skill">Git / GitHub</span>
+  </div>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p style="color:#8b949e">Available for freelance AML data consultancy, data cleaning, and analytics projects.</p>
+  <div class="contact-links">
+    <a href="mailto:habibmonsur01@gmail.com">&#128231; habibmonsur01@gmail.com</a>
+    <a href="https://www.fiverr.com/mdmonsurhabib">&#128188; Fiverr</a>
+    <a href="https://linkedin.com/in/mdmonsurhabib">&#128279; LinkedIn</a>
+    <a href="https://aitipseveryday.com">&#127760; aitipseveryday.com</a>
+  </div>
+</section>
 
 <footer>
-  <p>© 2026 Monsur Habib · "Turning complex transaction data into clear compliance solutions."</p>
+  <p>&copy; 2026 Monsur Habib &mdash; "Turning complex transaction data into clear compliance solutions."</p>
 </footer>
 
 </body>
